@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./Button";
-import project1Thumbnail from "../assets/project1Thumbnail.png";
+import project1Thumbnail from "../assets/project1thumbnail.png";
 import bgProject1 from "../assets/bgProject1.jpg";
 
 function RecentProjects() {
