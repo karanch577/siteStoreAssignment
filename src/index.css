@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Object Sans';
+  src: url('./fonts/Object Sans/ObjectSans-Heavy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+    * {
+      font-family: 'Inter', sans-serif;
+      /* background-color: #ECECEC; */
+      /* color: #020202; */
+    }
+  }
