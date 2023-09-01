@@ -2,6 +2,13 @@ import React from "react";
 import Button from "./Button";
 
 function Footer() {
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }
   return (
     <div className="bg-primary-black text-primary-white">
     <div className=" w-full mx-auto max-w-7xl 2xl:max-w-[1536px]">
@@ -79,7 +86,7 @@ function Footer() {
             <Button text="Subscribe" bgColor="black" />
           </div>
         </div>
-        <div className="right bg-primary-black border cursor-pointer border-white rounded-full p-7">
+        <div onClick={scrollToTop} className="right bg-primary-black border cursor-pointer border-white rounded-full p-7">
           <img
             className="bg-transparent"
             src="./arrow-up.png"

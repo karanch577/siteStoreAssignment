@@ -6,7 +6,7 @@ import bgProject1 from "../assets/bgProject1.jpg";
 function RecentProjects() {
   return (
     <div className="relative flex items-center justify-center bg-primary-white">
-      <div className="bgImag">
+      <div className="bgImage">
         <img className="-z-1" src={bgProject1} alt="project1" />
       </div>
       <div className="w-full text-primary-white max-w-7xl 2xl:max-w-[1536px] mt-[3rem] absolute top-0">
@@ -14,7 +14,7 @@ function RecentProjects() {
           Our Recent Projects
         </h1>
 
-        <div className="flex justify-between mt-48">
+        <div className="flex justify-between mt-48 border border-red-500">
           <div className="left w-[50%]">
             <h2 className="text-[28px] font-[600]">Zymrat</h2>
             <p className="text-[20px] mt-6 mb-16">
