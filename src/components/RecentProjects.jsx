@@ -14,7 +14,7 @@ function RecentProjects() {
           Our Recent Projects
         </h1>
 
-        <div className="flex justify-between mt-48 border border-red-500">
+        <div className="flex justify-between mt-48">
           <div className="left w-[50%]">
             <h2 className="text-[28px] font-[600]">Zymrat</h2>
             <p className="text-[20px] mt-6 mb-16">
