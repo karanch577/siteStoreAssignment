@@ -1,17 +1,10 @@
 import React from "react";
-import header1 from "../assets/header1.jpeg";
-import header2 from "../assets/header2.jpeg";
-import header3 from "../assets/header3.jpeg";
-import header4 from "../assets/header4.jpg";
-import header5 from "../assets/header5.jpg";
-import header6 from "../assets/header6.jpg";
-import header7 from "../assets/header7.jpeg";
-import header8 from "../assets/header8.jpg";
+import HeaderImages from "./HeaderImages";
 
 function Header() {
   return (
-    <div className="bg-primary-white py-28">
-      <div className="w-full mx-auto max-w-7xl 2xl:max-w-[1536px] ">
+    <div className="bg-primary-white pt-28">
+      <div className="w-full ">
         <h1 className="text-[55px] 2xl:text-[60px] font-objectSans font-[800] text-center">
           Empowering Brands, Enriching Experiences.
         </h1>
@@ -27,25 +20,15 @@ function Header() {
         </p>
 
         {/* image gallery start */}
-        <div className="flex gap-5 mt-32">
-          <div className="flex flex-col gap-4 w-full relative top-11">
-            <img src={header1} alt="header img" />
-            <img src={header2} alt="header img" />
-          </div>
-          <div className="">
-            <img className="object-center object-cover w-[1300px] h-full" src={header3} alt="header img" />
-          </div>
-          <div className="w-[150%] relative top-11 flex flex-col gap-4">
-            <div className="flex gap-4 overflow-hidden">
-              <img className="w-1/2" src={header4} alt="header img" />
-              <img className="w-1/2" src={header5} alt="header img" />
-            </div>
-            <img src={header6} alt="header img" />
-          </div>
-          <div className="flex flex-col gap-4 w-full">
-            <img src={header7} alt="header img" />
-            <img src={header8} alt="header img" />
-          </div>
+        <div className="slider overflow-x-hidden pt-36 pb-44">
+        <div className="flex slider-track">
+        
+
+        <HeaderImages />
+        {/* we need two component because we are translating one component from 0% to 100% so we will be having black space, so this next component will cover up */}
+        <HeaderImages />
+        
+        </div>
         </div>
         {/* image gallery end */}
       </div>

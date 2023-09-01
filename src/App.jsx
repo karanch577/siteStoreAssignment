@@ -7,6 +7,7 @@ import Stats from './components/Stats'
 import Booking from './components/Booking'
 import RecentProjects from './components/RecentProjects'
 import Brands from './components/Brands'
+import "./App.css"
 
 function App() {
 
